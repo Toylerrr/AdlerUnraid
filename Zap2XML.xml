@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>zap2xml-unraid</Name>
+  <Repository>shuaiscott/zap2xml</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1634412778</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/plex</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="path" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/plex</Config>
+  <Config Name="USERNAME" Target="USERNAME" Default="" Mode="" Description="Container Variable: USERNAME" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="Container Variable: PASSWORD" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+</Container>
+COMMAND:
