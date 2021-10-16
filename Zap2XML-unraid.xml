@@ -2,22 +2,22 @@
 <Container version="2">
   <Name>zap2xml-unraid</Name>
   <Repository>shuaiscott/zap2xml</Repository>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/shuaiscott/zap2xml/dockerfile</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
+  <Support>https://github.com/Toylerrr/AdlerUnraid</Support>
+  <Project>https://github.com/Toylerrr/AdlerUnraid</Project>
   <Overview/>
-  <Category/>
+  <Category>MediaApp:Video Status:Beta</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/Toylerrr/AdlerUnraid/main/Zap2XML-unraid.xml<TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/Toylerrr/AdlerUnraid/main/img/Zap2it.jpg<Icon/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Toylerrr/AdlerUnraid/main/img/Zap2it.jpg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1634412778</DateInstalled>
+  <DateInstalled>1634420601</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description/>
@@ -27,26 +27,25 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/plex</HostDir>
+      <HostDir>/mnt/cache/appdata/jellyfin/XMLTV/</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
     <Variable>
-      <Value></Value>
+      <Value/>
       <Name>USERNAME</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value></Value>
+      <Value/>
       <Name>PASSWORD</Name>
       <Mode/>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="path" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/plex</Config>
-  <Config Name="USERNAME" Target="USERNAME" Default="" Mode="" Description="Container Variable: USERNAME" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="Container Variable: PASSWORD" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="path" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/jellyfin/XMLTV/</Config>
+  <Config Name="USERNAME" Target="USERNAME" Default="" Mode="" Description="Container Variable: USERNAME" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="Container Variable: PASSWORD" Type="Variable" Display="always" Required="false" Mask="true"/>
 </Container>
-COMMAND:
