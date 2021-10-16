@@ -12,8 +12,8 @@
   <Overview/>
   <Category/>
   <WebUI/>
-  <TemplateURL/>
-  <Icon/>
+  <TemplateURL>https://raw.githubusercontent.com/Toylerrr/AdlerUnraid/main/Zap2XML-unraid.xml<TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Toylerrr/AdlerUnraid/main/img/Zap2it.jpg<Icon/>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
