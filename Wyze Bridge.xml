@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>WyzeBridge</Name>
+  <Repository>mrlt8/wyze-bridge:latest</Repository>
+  <Registry>https://hub.docker.com/r/mrlt8/wyze-bridge</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/mrlt8/docker-wyze-bridge</Support>
+  <Project>https://github.com/mrlt8/docker-wyze-bridge</Project>
+  <Overview>Docker container to expose a local RTMP, RTSP, and HLS stream for ALL your Wyze cameras including the outdoor and doorbell cams. No third-party or special firmware required.&#xD;
+&#xD;
+By default, the bridge will create three streams for each of your cameras which can be acccessed at the following URIs, where camera-nickname is the name of the camera set in the Wyze app and converted to lower case with hyphens in place of spaces. e.g. 'Front Door' would be /front-door&#xD;
+&#xD;
+Replace localhost with the hostname or ip of the machine running the bridge:&#xD;
+&#xD;
+RTMP:&#xD;
+&#xD;
+rtmp://localhost:1935/camera-nickname&#xD;
+RTSP:&#xD;
+&#xD;
+rtsp://localhost:8554/camera-nickname&#xD;
+HLS:&#xD;
+&#xD;
+http://localhost:8888/camera-nickname/stream.m3u8&#xD;
+HLS can also be viewed in the browser using:&#xD;
+&#xD;
+http://localhost:8888/camera-nickname</Overview>
+  <Category>HomeAutomation: Security: Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1637189196</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Docker container to expose a local RTMP, RTSP, and HLS stream for ALL your Wyze cameras including the outdoor and doorbell cams. No third-party or special firmware required.&#xD;
+&#xD;
+By default, the bridge will create three streams for each of your cameras which can be acccessed at the following URIs, where camera-nickname is the name of the camera set in the Wyze app and converted to lower case with hyphens in place of spaces. e.g. 'Front Door' would be /front-door&#xD;
+&#xD;
+Replace localhost with the hostname or ip of the machine running the bridge:&#xD;
+&#xD;
+RTMP:&#xD;
+&#xD;
+rtmp://localhost:1935/camera-nickname&#xD;
+RTSP:&#xD;
+&#xD;
+rtsp://localhost:8554/camera-nickname&#xD;
+HLS:&#xD;
+&#xD;
+http://localhost:8888/camera-nickname/stream.m3u8&#xD;
+HLS can also be viewed in the browser using:&#xD;
+&#xD;
+http://localhost:8888/camera-nickname</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8888</HostPort>
+        <ContainerPort>8888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>WYZE_EMAIL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WYZE_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="8888" Default="8888" Mode="tcp" Description="Container Port: 8888" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
+  <Config Name="Email" Target="WYZE_EMAIL" Default="" Mode="" Description="The email for your Wyze account" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Password" Target="WYZE_PASSWORD" Default="" Mode="" Description="The password for your Wyze account&#13;&#10;&#13;&#10;If your email or password contains a % or $ character, you may need to escape them with an extra character. e.g., pa$$word should be entered as pa$$$$word" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>
